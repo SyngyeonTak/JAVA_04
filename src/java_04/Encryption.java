@@ -9,14 +9,18 @@ public class Encryption {
 		//	char data2 =65;
 		//	System.out.println(data);
 		//	System.out.println(data2);
-		
-		String pw =null;
-		System.out.println("PW : ");
+			
+		String pw = "";
+		String enPw = "";
+		System.out.print("PW : ");
 		pw = new Scanner(System.in).next();
-		System.out.println("Encrypted PW : ");
+		System.out.print("Encrypted PW : ");
+		
 		for(int i = 0; i < pw.length(); i++) {
-			System.out.print((char)(pw.charAt(i)-10));
+			enPw += ""+(char)(pw.charAt(i)-10);
 		}
+		System.out.print(enPw);
+		
 		
 	}
 
